@@ -68,8 +68,8 @@ export default {
         filter.selected = (filter.name == selectFilter.name)
       }),
       Event.$emit('changeType', selectFilter.name);
-      document.querySelectorAll('.pseudo-scroller').remove();
-      Event.$isoGrid.reLoad() 
+      Event.$clearIsoGrid.clearGrid() 
+      Event.$reLoadIsoGrid.reLoad() 
       
     }
 
