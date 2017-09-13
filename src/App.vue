@@ -44,7 +44,7 @@
 
 
 <script>
-import cases from './components/cases.vue';
+import cases from './components/cases.vue'
 
 
 export default {
@@ -68,8 +68,12 @@ export default {
         filter.selected = (filter.name == selectFilter.name)
       }),
       Event.$emit('changeType', selectFilter.name);
+      document.querySelectorAll('.pseudo-scroller').remove();
+      Event.$isoGrid.reLoad() 
+      
     }
-  },
+
+  }
 }
 </script>
 

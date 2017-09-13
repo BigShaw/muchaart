@@ -69,9 +69,9 @@
 		},
 		created(){
 			Event.$on('changeType',(value) => this.currentCaseType = value.toLowerCase());
-			// alert(this.currentCaseType)
-			// Event.$on('changeType',(value) => alert(value) );
-			// load(window);
+			// Event.$on('changeType', function(value) {
+			// 	this.currentCaseType = value.toLowerCase();
+			// });
 		}
 
 	}
