@@ -1,6 +1,5 @@
 <template>
 	<ul class="grid grid--effect-flip">
-
             <li class="grid__item" v-for="item in filterItems" >
               <a class="grid__link">
                 <img class="grid__img layer" src="src/img/advertising.png" v-if="item.caseType == 'advertising'" alt="Advertising" />
