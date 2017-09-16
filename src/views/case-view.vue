@@ -1,6 +1,11 @@
 
 <template>
-	<h1>page view</h1>
+	<div class="bg">
+		
+
+
+
+	</div>
 
 </template>
 
@@ -20,5 +25,14 @@ export default {
 </script>
 
 <style lang="scss">
+
+.bg{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	z-index: 3000;
+	background-color: #222;
+}
+
 
 </style>
