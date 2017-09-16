@@ -1,7 +1,7 @@
 <template>
 	<ul class="grid grid--effect-flip">
             <li class="grid__item" v-for="item in filterItems" >
-              <a class="grid__link">
+              <router-link to="/cases/case-view" tag="a" class="grid__link">
                 <img class="grid__img layer" src="src/img/advertising.png" v-if="item.caseType == 'advertising'" alt="Advertising" />
                 <img class="grid__img layer" src="src/img/games.png" v-if="item.caseType == 'games'" alt="Games" />
                 <img class="grid__img layer" src="src/img/others.png" v-if="item.caseType == 'others'" alt="Others" />
@@ -10,7 +10,7 @@
 
                 <img class="grid__img layer" :src="item.imgSource" alt="032" />
                 <span class="grid__title">{{item.title}}</span>
-              </a>
+              </router-link>
             </li>
 	</ul>
 

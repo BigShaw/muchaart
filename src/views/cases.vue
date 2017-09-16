@@ -26,15 +26,14 @@
         </button> -->
 
     </header>
-
+	<router-view></router-view>
 
     <div class="isolayer isolayer--scroll1 isolayer--shadow">
-    	<cases></cases>
+    	<caseitem></caseitem>
     </div>
 
 </main>
 
-<!-- <casepage></casepage> -->
 
 
 <!--       <a class="pater" href="https://goo.gl/k3vxNx">
@@ -48,12 +47,12 @@
 
 
 <script>
-import cases from './components/cases.vue'
+import caseitem from './components/case-item.vue'
 
 
 export default {
 	components:{ 
-		cases
+		caseitem
 	},
 	data () {
 		return {
