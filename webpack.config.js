@@ -70,12 +70,6 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
-    }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jquery: 'jquery',
-      'window.jQuery': 'jquery',
-      jQuery: 'jquery'
     })
   ])
 }
